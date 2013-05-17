@@ -1,0 +1,95 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background: #eee;
+	font-size: 15px;
+	font-family: Arial, Arial, Helvetica, sans-serif;
+}
+.logo {
+	margin: 20px auto;
+	padding-top: 20px;
+	text-align: center;
+}
+.logo a {
+	background-image: url(../images/bg.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin: 40px;
+}
+#piscdong_link {
+	background-position: 0 0;
+}
+#piscdong_link:hover {
+	background-position: 0 -200px;
+}
+#miniclass_link {
+	background-position: -200px 0;
+}
+#miniclass_link:hover {
+	background-position: -200px -200px;
+}
+.content {
+	margin: 10px auto;
+	width: 600px;
+	padding-top: 20px;
+	clear: both;
+	height: 60px;
+}
+.title {
+	display: block;
+	padding-left: 20px;
+	width: 250px;
+	float: left;
+	font-family: Georgia, serif;
+	font-size: 44px;
+	font-style: italic;
+}
+.site_list {
+	margin-left: 275px;
+}
+.site_list a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-image: url(../images/bg.png);
+	background-repeat: no-repeat;
+	margin: 5px 20px;
+	float: left;
+}
+.sina_link {
+	background-position: 0 -400px;
+}
+.sina_link:hover {
+	background-position: 0 -440px;
+}
+.github_link {
+	background-position: -40px -400px;
+}
+.github_link:hover {
+	background-position: -40px -440px;
+}
+.oschina_link {
+	background-position: -80px -400px;
+}
+.oschina_link:hover {
+	background-position: -80px -440px;
+}
+.gitosc_link {
+	background-position: -120px -400px;
+}
+.gitosc_link:hover {
+	background-position: -120px -440px;
+}
+.foot {
+	border-top: 1px solid #ccc;
+	margin: 20px auto;
+	padding-top: 60px;
+	width: 600px;
+	padding: 5px;
+	clear: both;
+}
+.powerdby {
+	float: right;
+}
