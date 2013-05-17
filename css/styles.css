@@ -5,6 +5,9 @@ html, body {
 	font-size: 15px;
 	font-family: Arial, Arial, Helvetica, sans-serif;
 }
+a {
+	color: #036;
+}
 .logo {
 	margin: 20px auto;
 	padding-top: 20px;
