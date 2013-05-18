@@ -58,7 +58,7 @@ a {
 	height: 40px;
 	background-image: url(../images/bg.png);
 	background-repeat: no-repeat;
-	margin: 5px 20px;
+	margin: 5px 11px;
 	float: left;
 }
 .sina_link {
@@ -84,6 +84,12 @@ a {
 }
 .gitosc_link:hover {
 	background-position: -120px -440px;
+}
+.douban_link {
+	background-position: -160px -400px;
+}
+.douban_link:hover {
+	background-position: -160px -440px;
 }
 .foot {
 	border-top: 1px solid #ccc;
