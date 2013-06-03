@@ -29,7 +29,8 @@ a {
 	display: inline-block;
 	width: 200px;
 	height: 200px;
-	text-indent: -100000px;
+	overflow: hidden;
+	text-indent: -500px;
 }
 #piscdong_link {
 	background-position: 0 0;
@@ -83,7 +84,8 @@ a {
 	height: 40px;
 	background-image: url(../images/bg.png);
 	background-repeat: no-repeat;
-	text-indent: -100000px;
+	overflow: hidden;
+	text-indent: -500px;
 }
 .sina_link {
 	background-position: 0 -400px;
