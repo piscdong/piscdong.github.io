@@ -19,12 +19,17 @@ a {
 	color: #036;
 }
 
+.bg {
+	background-image: url(../images/bg.png?191127);
+}
+
 .logo {
 	margin: 0 auto;
 	margin-top: 50px;
 	width: 151px;
 	height: 160px;
-	background: url(../images/bg.png) no-repeat 0 0;
+	background-repeat: no-repeat;
+	background-position: 0 0;
 	text-indent: -1000px;
 }
 
@@ -68,7 +73,6 @@ a {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background-image: url(../images/bg.png);
 	background-repeat: no-repeat;
 	overflow: hidden;
 	text-indent: -500px;
