@@ -1,83 +1,69 @@
-html, body {
+@charset "UTF-8";
+* {
 	margin: 0;
 	padding: 0;
+	list-style: none;
+	outline: none;
+	box-sizing: border-box;
+	border: 0;
+	font-family: -apple-system, BlinkMacSystemFont, PingFang SC, SanFranciscoDisplay, Hiragino Sans GB, Microsoft YaHei, 微软雅黑, sans-serif, tahoma, arial, \5b8b\4f53;
+	font-weight: 400
+}
+
+body {
 	background: #eee;
 	font-size: 15px;
-	font-family: Arial, Arial, Helvetica, sans-serif;
 }
+
 a {
 	color: #036;
 }
+
 .logo {
-	margin: 20px auto;
-	padding: 0;
-	padding-top: 20px;
-	text-align: center;
-	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 151px;
+	height: 160px;
+	background: url(../images/bg.png) no-repeat 0 0;
+	text-indent: -1000px;
 }
-.logo li {
-	margin: 0;
-	padding: 0;
-	display: inline-block;
-	width: 200px;
-	height: 200px;
-	margin: 40px;
-}
-.logo a {
-	background-image: url(../images/bg.png);
-	background-repeat: no-repeat;
-	display: inline-block;
-	width: 200px;
-	height: 200px;
-	overflow: hidden;
-	text-indent: -500px;
-}
-#piscdong_link {
-	background-position: 0 0;
-}
-#piscdong_link:hover {
-	background-position: 0 -200px;
-}
-#miniclass_link {
-	background-position: -200px 0;
-}
-#miniclass_link:hover {
-	background-position: -200px -200px;
-}
+
 .content {
 	margin: 10px auto;
-	width: 600px;
-	padding-top: 20px;
-	clear: both;
+	max-width: 600px;
+	margin-top: 20px;
 	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
-.content h1 {
+
+.content h2 {
 	display: block;
 	margin: 0;
 	padding: 0;
-	padding-left: 20px;
-	width: 250px;
-	float: left;
 	font-family: Georgia, serif;
 	font-size: 44px;
 	font-style: italic;
-	font-weight: normal;
 }
+
 .site_list {
 	margin: 0;
 	padding: 0;
-	margin-left: 275px;
-	display: block;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 330px;
 }
+
 .site_list li {
 	display: block;
 	margin: 0;
 	padding: 0;
 	width: 40px;
 	height: 40px;
-	margin: 5px 11px;
-	float: left;
 }
+
 .site_list a {
 	display: block;
 	width: 40px;
@@ -87,59 +73,120 @@ a {
 	overflow: hidden;
 	text-indent: -500px;
 }
+
 .sina_link {
-	background-position: 0 -400px;
+	background-position: 0 -160px;
 }
+
 .sina_link:hover {
-	background-position: 0 -440px;
+	background-position: 0 -200px;
 }
+
 .github_link {
-	background-position: -40px -400px;
+	background-position: -40px -160px;
 }
+
 .github_link:hover {
-	background-position: -40px -440px;
+	background-position: -40px -200px;
 }
+
 .oschina_link {
-	background-position: -80px -400px;
+	background-position: -80px -160px;
 }
+
 .oschina_link:hover {
-	background-position: -80px -440px;
+	background-position: -80px -200px;
 }
-.gitosc_link {
-	background-position: -120px -400px;
+
+.gitee_link {
+	background-position: -120px -160px;
 }
-.gitosc_link:hover {
-	background-position: -120px -440px;
+
+.gitee_link:hover {
+	background-position: -120px -200px;
 }
+
 .douban_link {
-	background-position: -160px -400px;
+	background-position: -160px -160px;
 }
+
 .douban_link:hover {
-	background-position: -160px -440px;
+	background-position: -160px -200px;
 }
+
+.weixin_link {
+	background-position: -200px -160px;
+}
+
+.weixin_link:hover {
+	background-position: -200px -200px;
+}
+
 .foot {
-	display: block;
 	border-top: 1px solid #ccc;
 	margin: 20px auto;
 	padding: 10px;
-	width: 600px;
-	clear: both;
+	max-width: 620px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
-.foot li {
+
+.foot .left {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.foot .left li {
 	display: block;
 	margin: 0;
+	line-height: 20px;
 }
+
 .copyright {
-	float: left;
 	padding: 0;
 	padding-right: 8px;
 }
+
 .site {
 	border-left: 1px solid #000;
-	float: left;
 	padding: 0 8px;
 }
-.poweredby {
-	float: right;
-	padding: 0;
+
+@media (max-width:600px) {
+	.content {
+		padding: 0 10px;
+	}
+	.content h2 {
+		font-size: 30px;
+	}
+	.site_list {
+		width: 300px;
+	}
+}
+
+@media (max-width:490px) {
+	.content {
+		display: block;
+		height: auto;
+		padding: 0 20px;
+	}
+	.content h2 {
+		width: 100%;
+		text-align: center;
+		padding: 10px 0;
+	}
+	.site_list {
+		width: 100%;
+	}
+}
+
+@media (max-width:420px) {
+	.foot {
+		display: block;
+	}
+	.poweredby {
+		margin-top: 10px;
+	}
 }
